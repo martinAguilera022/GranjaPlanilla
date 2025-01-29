@@ -1,0 +1,48 @@
+@page {
+    size: A4 landscape; /* Configura la orientación landscape */
+    margin: 5mm; /* Márgenes reducidos para aprovechar mejor el espacio */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 10pt; /* Tamaño de fuente más grande para el texto general */
+    margin: 0;
+    padding: 0;
+    transform: scale(0.9); /* Ajuste de escala para reducir solo la tabla */
+    transform-origin: top left; 
+}
+
+table {
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    table-layout: fixed; /* Establece un layout fijo para controlar los anchos de columna */
+}
+@page :first {
+    background: url('logo.png') no-repeat;
+    background-position: top left;
+    background-size: 40mm; /* Ajusta el tamaño de la imagen */
+}
+th, td {
+    word-wrap: break-word;
+    white-space: normal;
+    padding: 4px; /* Relleno reducido */
+    font-size: 10pt; /* Tamaño de fuente más grande para que no se vea tan pequeño */
+}
+col{
+    transform: scale(0.61); /* Ajuste de escala para reducir solo la tabla */
+    transform-origin: top left; /* Asegura que la transformación comience desde la esquina superior izquierda */
+
+}
+/* Ajusta los anchos de las columnas */
+col:nth-child(1) { width: 70px; }
+col:nth-child(2) { width: 50px; }
+col:nth-child(3) { width: 70px; }
+col:nth-child(4) { width: 80px; }
+col:nth-child(5) { width: 60px; }
+col:nth-child(6) { width: 90px; }
+col:nth-child(7) { width: 70px; }
+col:nth-child(8) { width: 80px; }
+col:nth-child(9) { width: 70px; }
+col:nth-child(10) { width: 90px; }
+col:nth-child(11) { width: 60px; }
+col:nth-child(12) { width: 110px; }
+col:nth-child(13) { width: 120px; }
